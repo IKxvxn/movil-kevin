@@ -107,7 +107,7 @@ class NormalLoginForm extends React.Component {
     return (
       <div>
         <Row type="flex" justify="center" style={{fontSize:"1.5rem", textTransform:"uppercase", backgroundColor:"#71aaa2", color:"#fff"}}>Lista De Espera</Row>
-        <Table loading={this.props.loading} rowSelection={this.rowSelection} columns={this.columns} dataSource={filter} size= "small" scroll={{ x: "90rem"}} pagination={{position:"none"}}  />
+        <Table loading={this.props.loading} rowSelection={this.rowSelection} columns={this.columns} dataSource={filter} size= "small" scroll={{ x: "90rem"}} pagination={{ pageSize: 9}}  />
         <Row style={{position:"fixed",bottom:"0px",width:"100%", backgroundColor:"#71aaa2"}} type="flex" justify="center"><img style={{width:"2.5rem",height:"2.5rem", margin:".5rem 0"}} alt="logo" src={logo} /></Row>
       </div>
       
